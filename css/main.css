@@ -1,0 +1,22 @@
+/***************************
+GENERAL
+***************************/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', 'Arial', 'Verdana', sans-serif;
+	font-size: .95em;
+	
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	flex-direction: column;
+	min-height: 100vh;
+	
+	margin: 0;
+	padding: 0;
+}
