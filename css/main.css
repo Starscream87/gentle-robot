@@ -41,12 +41,26 @@ h3 {
 	margin: 0;
 }
 
+/***************************
+COLOR
+***************************/
+header,
+footer {
+	background-color: #bbb;
+}
 
+.dl-next a {
+	color: #c7c7c7;
+}
 
+.dl-next a:hover,
+.buy-music figure:nth-child(n+2) figurecaption /*Select all but the first child*/ {
+	color: #67594c;
+}
 
-
-
-
+.buy-music figure:first-child figurecaption {
+	color: #6e70a8;
+}
 
 
 
