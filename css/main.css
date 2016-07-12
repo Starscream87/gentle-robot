@@ -87,17 +87,30 @@ hr {
 	max-width: 2em;
 }
 
+/***************************
+CONTENT
+***************************/
+.dl-next {
+	margin: .25em 0 .75em;
+	box-shadow: 0px 0px 4px 4px #67594c;
+}
 
+.buy-music {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	outline: 2px solid #555;
+	padding: .75em;
+}
 
+.buy-music figure {
+	margin: 0 .5em;
+}
 
-
-
-
-
-
-
-
-
+.buy-music figurecaption {
+	font-style: italic;
+	font-size: .75em;
+}
 
 
 
