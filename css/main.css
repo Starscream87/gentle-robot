@@ -140,6 +140,18 @@ ABOUT
 	padding: .75em;
 }
 
+.about h3::before {
+	content: url(../img/music-note.png);
+	display: inline-block;
+	margin-right: .5em;
+}
+
+.about h3::after {
+	content: url(../img/music-note.png);
+	display: inline-block;
+	margin-left: .45em;
+}
+
 .about p {
 	text-align: justify;
 	font-size: .75rem;
