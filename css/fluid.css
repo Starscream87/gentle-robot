@@ -1,0 +1,18 @@
+@media screen and (min-width: 600px) {
+.heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+hr {
+	display: none;
+}
+
+#social-box {
+	flex-basis: 38%;
+	
+}
+	
+
+}
