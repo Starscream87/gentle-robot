@@ -1,4 +1,7 @@
 @media screen and (min-width: 600px) {
+/***************************
+HEADING
+***************************/
 .heading {
 	display: flex;
 	justify-content: space-between;
@@ -12,6 +15,26 @@ hr {
 #social-box {
 	flex-basis: 38%;
 	
+}
+/***************************
+CONTENT
+***************************/
+.dl-next {
+	width: 45%;
+	display: inline-block;
+	float: left;
+}
+
+iframe,
+.about {
+	width: 50%;
+	float: right;
+	margin: 1em 0;
+}
+
+h4,
+.buy-music {
+	clear: both;
 }
 	
 
