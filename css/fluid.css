@@ -36,6 +36,12 @@ h4,
 .buy-music {
 	clear: both;
 }
+
+.clrfx {
+	content: "";
+	display: table;
+	clear: both;
+}
 	
 
 }
