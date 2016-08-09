@@ -1,4 +1,5 @@
 @media screen and (min-width: 600px) {
+	
 /***************************
 HEADING
 ***************************/
@@ -13,7 +14,7 @@ hr {
 }
 
 #social-box {
-	flex-basis: 38%;
+	flex-basis: 40%;
 	
 }
 /***************************
@@ -23,17 +24,21 @@ CONTENT
 	width: 45%;
 	display: inline-block;
 	float: left;
+	background-color: #c7c7c7;
 }
 
 iframe,
 .about {
 	width: 50%;
 	float: right;
-	margin: 1em 0;
 }
 
-h4,
-.buy-music {
+iframe,
+.about {
+	opacity: .8;
+}
+
+.albums {
 	clear: both;
 }
 
@@ -42,6 +47,36 @@ h4,
 	display: table;
 	clear: both;
 }
-	
-
 }
+
+@media screen and (min-width: 1000px) {
+/***************************
+GENERAL
+***************************/
+body {
+	background-image: url("../img/site_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: right;
+}	
+	
+.container {
+	max-width: 900px;
+}	
+
+/***************************
+CONTENT
+***************************/
+.dl-next {
+	box-shadow: none;
+}
+	
+.albums {
+	float: right;
+	width: 50%;
+	clear: none;
+}	
+	
+}
+
