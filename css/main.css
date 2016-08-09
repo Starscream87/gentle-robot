@@ -9,9 +9,7 @@ GENERAL
 	box-sizing: border-box;
 }
 
-html,
-.about,
-footer {
+.about {
 	-webkit-box-shadow: inset 0 0 10px 5px #555;
 	-moz-box-shadow: inset 0 0 10px 5px #555;
 	box-shadow: inset 0 0 10px 5px #555;
@@ -41,6 +39,7 @@ a {
 
 img {
 	max-width: 100%;
+	outline: 1px solid #111;
 }
 
 .container {
@@ -64,45 +63,70 @@ ul {
 
 figurecaption {
 	display: block;
-	padding: 0 .4em .4em;
+	/* padding: 0 .4em .4em; */
 }
 
 /***************************
 COLOR
 ***************************/
+body {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(200, 200, 200, 0.75), rgba(0, 0, 0, 1));
+}
+
+h3,
+h4,
+p,
+a {
+	color: #111;
+}
+
 header,
 .about,
 footer {
-	background-color: #c0c0c0;
+	background-color: #111;
 }
 
-.dl-next a {
+.about h3,
+.about p,
+footer span {
 	color: #c7c7c7;
 }
 
-.dl-next a:hover,
-.buy-music figure:nth-child(n+2) figurecaption /*Select all but the first child*/ {
-	color: #67594c;
+.dl-next a:hover {
+	color: #473e34;
+}
+
+/* .dl-next a {
+	color: #111;
+} */
+
+/* .dl-next a:hover,
+.buy-music figure:nth-child(n+2) figurecaption //Select all but the first child {
+	color: #473e34;
 }
 
 .buy-music figure:first-child figurecaption {
 	color: #6e70a8;
-}
+} */
 
 /***************************
 HEADING
 ***************************/
 header {
-	-webkit-box-shadow: inset 0 5px 5px #555;
-	-moz-box-shadow: inset 0 5px 5px #555;
-	box-shadow: 0px 5px 5px #555;
+	-webkit-box-shadow: 0 5px 5px #555;
+	-moz-box-shadow: 0 5px 5px #555;
+	box-shadow: 0px 2px 10px #555;
+}
+
+.heading img {
+	outline: 0;
 }
 
 /* Gradient transparent - color - transparent */
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(200, 200, 200, 0.75), rgba(0, 0, 0, 0));
 }
 
 #social-box {
@@ -116,12 +140,27 @@ hr {
 	max-width: 2em;
 }
 
+.social-icon img:hover {
+	opacity: .5;
+}
+
 /***************************
 CONTENT
 ***************************/
 .dl-next {
-	margin: .25em 0 .75em;
-	box-shadow: 0px 0px 4px 4px #67594c;
+	-webkit-box-shadow: 0px 0px 4px 4px #c7c7c7;
+	-moz-box-shadow: 0px 0px 4px 4px #c7c7c7;
+	box-shadow: 0px 0px 4px 4px #c7c7c7;
+	margin: 0 0 1em;
+	outline: 1px solid #111;
+}
+
+.dl-next img:hover {
+	opacity: .75;
+}
+
+.dl-next figurecaption {
+	padding: 0 .4em .5em;
 }
 
 iframe {
@@ -131,15 +170,24 @@ iframe {
 }
 
 .albums {
+	background-color: #999;
 	outline: 1px solid #555;
-	padding-top: .5em;
+	padding:.75em;
+}
+
+.albums h4 {
+	font-size: .9em;
+	padding-bottom: .75em;
+}
+
+.albums img:hover {
+	opacity: .5;
 }
 
 .buy-music {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: flex;
-	padding: .75em;
 }
 
 .buy-music figure {
@@ -148,7 +196,7 @@ iframe {
 
 .buy-music figurecaption {
 	font-style: italic;
-	font-size: .75em;
+	font-size: .9em;
 }
 
 /***************************
@@ -172,8 +220,7 @@ ABOUT
 }
 
 .about p {
-	text-align: justify;
-	font-size: .75rem;
+	font-size: .9rem;
 }
 
 /***************************
@@ -182,7 +229,6 @@ PHOTOS
 #slideshow {
 	position: relative;
 }
-
 
 nav a {
 	position: absolute;
